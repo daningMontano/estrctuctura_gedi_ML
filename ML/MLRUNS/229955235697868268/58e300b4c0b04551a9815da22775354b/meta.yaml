@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/ACADEMICO/UTPL/herramientas_inteligencia_artificial/PROYECTO_FINAL/GEDI_STRUCTURE_ML/ML/MLRUNS/229955235697868268/58e300b4c0b04551a9815da22775354b/artifacts
+end_time: 1747962290594
+entry_point_name: ''
+experiment_id: '229955235697868268'
+lifecycle_stage: active
+run_id: 58e300b4c0b04551a9815da22775354b
+run_name: rf_final_total
+run_uuid: 58e300b4c0b04551a9815da22775354b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747962282019
+status: 3
+tags: []
+user_id: Daning
