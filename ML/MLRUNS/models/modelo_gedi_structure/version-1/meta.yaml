@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1747964785102
+current_stage: None
+description: ''
+last_updated_timestamp: 1747964785102
+name: modelo_gedi_structure
+run_id: 58e300b4c0b04551a9815da22775354b
+run_link: ''
+source: file:///c:/ACADEMICO/UTPL/herramientas_inteligencia_artificial/PROYECTO_FINAL/GEDI_STRUCTURE_ML/ML/MLRUNS/229955235697868268/58e300b4c0b04551a9815da22775354b/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///c:/ACADEMICO/UTPL/herramientas_inteligencia_artificial/PROYECTO_FINAL/GEDI_STRUCTURE_ML/ML/MLRUNS/229955235697868268/58e300b4c0b04551a9815da22775354b/artifacts/model
+user_id: null
+version: 1

@@ -18,23 +18,20 @@ from branca.colormap import LinearColormap
 def load_scaler_and_model():
     project_root = Path(__file__).resolve().parent.parent
 
-    # 1.1) Carga del scaler entrenado localmente
+    # 1) Carga del scaler local
     scaler_path = project_root / "ML" / "scaler.pkl"
     if not scaler_path.exists():
         st.error(f"No encontré el scaler en: {scaler_path}")
         return None, None
     scaler = joblib.load(scaler_path)
 
-    # 1.2) Conexión a tu MLflow Tracking Server
+    # 2) Conecta al Tracking Server y carga el modelo correcto
     mlflow.set_tracking_uri("http://localhost:9090")
-
-    # 1.3) Carga de la versión 1 de tu modelo registrado
-    #    Ajusta a la versión que corresponda si es distinta
-    model_uri = "models:/gedi_structure_ml/1"
+    # URI usando el nombre 'modelo_gedi_structure' y la versión 1
+    model_uri = "models:/modelo_gedi_structure/1"
     model = mlflow.pyfunc.load_model(model_uri)
 
     return scaler, model
-
 # --------------------------------------------------
 # 2) Lógica de la pestaña de Predicción
 # --------------------------------------------------
